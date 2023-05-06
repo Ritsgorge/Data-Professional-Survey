@@ -24,8 +24,13 @@ Before                                                                          
 
 Before                                                                                                               |         After
 ---------------------------------------------------------------------------------------------------------------------|-------------------------
+![q5 before](https://user-images.githubusercontent.com/116006674/236624532-a4d55c82-4c99-412e-81c1-a3122eb2f67f.png) |![q5 after](https://user-images.githubusercontent.com/116006674/236624533-bbbf2130-f65f-4558-bb7a-041aa683bd3b.png)
+
 
 For the current salary column which contained both letters and digits, I first duplicated the column then split it using the ‘digit to non-digit’ option, which split the column into 3 separate columns. Thereafter, I removed the column having just the letter ‘k’ and used ‘replace values’ to remove ‘k’ from the second split column leaving just the digits. Next, I changed the data type of both columns to whole number and using custom column under ‘add column’ tab, I applied DAX function to obtain the average salary from the two columns with digits.
+
+Before                                                                                                               |         After
+---------------------------------------------------------------------------------------------------------------------|-------------------------
 
 INSIGHTS
 After analysis, I visualized my findings using PowerBI. It was clear that from a total of 630 responders, the Data scientist job title earned the highest average salary while database developers earned the least average salary. The favourite programming language of data professionals is python.
