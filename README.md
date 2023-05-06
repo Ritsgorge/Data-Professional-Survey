@@ -18,6 +18,12 @@ Columns such as Browser, City, OS,	Country & Referrer contained empty values and
 2.	Normalization of columns
 Using the split delimeter option in power query, I splitted the columns which included questions about favourite programming language, country and industry with delimeter set at colon(:), dash(-) and parentheses ‘(‘ respectively to make them readable at a glance and ready for analysis. 
 
+Before                                                                                                               |         After
+---------------------------------------------------------------------------------------------------------------------|-------------------------
+![q1 before](https://user-images.githubusercontent.com/116006674/236623953-6ef049ce-ae44-430b-9a7a-4a9a090a40da.png) | ![q1 after](https://user-images.githubusercontent.com/116006674/236623954-c378be9f-68ac-47f2-9fde-595e06cad880.png)
+
+Before                                                                                                               |         After
+---------------------------------------------------------------------------------------------------------------------|-------------------------
 
 For the current salary column which contained both letters and digits, I first duplicated the column then split it using the ‘digit to non-digit’ option, which split the column into 3 separate columns. Thereafter, I removed the column having just the letter ‘k’ and used ‘replace values’ to remove ‘k’ from the second split column leaving just the digits. Next, I changed the data type of both columns to whole number and using custom column under ‘add column’ tab, I applied DAX function to obtain the average salary from the two columns with digits.
 
