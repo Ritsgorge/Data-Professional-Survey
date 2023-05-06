@@ -35,6 +35,8 @@ Before                                                                          
 After analysis, I visualized my findings using PowerBI. It was clear that from a total of 630 responders, the Data scientist job title earned the highest average salary while database developers earned the least average salary. The favourite programming language of data professionals is python.
 In regards to happiness with salary, data professionals had an average rating of below 5. On average, data professionals voted a 5.74 rating for work/life balance
 When asked about the difficulty to break into tech, 43% of the responders voted neutral while 21% of them voted ‘easy’.
+![Screenshot (51)](https://user-images.githubusercontent.com/116006674/236625320-dab9c94b-ffc3-4eda-8acd-20d83fad52e8.png)
+
 
 # Conclusion
 As a highly competitive field, companies need to look into improving the salary benefits when hiring data professionals. Also the work/life of data professionals can be better through incentives like team bonding activities at work.
