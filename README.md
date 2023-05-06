@@ -11,11 +11,14 @@ I conducted data cleaning using the power query function in PowerBI. After asses
 -normalization of columns
 
 # Irrelevant columns & empty values
-columns such as Browser, City, OS,	Country & Referrer contained empty values and so they termed irrelevant and dropped.
+Columns such as Browser, City, OS,	Country & Referrer contained empty values and termed irrelevant and dropped.
+![drop columns](https://user-images.githubusercontent.com/116006674/236623801-88bfaea9-ca22-494b-ad09-9ebee4f12dcb.png)
 
 
 2.	Normalization of columns
 Using the split delimeter option in power query, I splitted the columns which included questions about favourite programming language, country and industry with delimeter set at colon(:), dash(-) and parentheses ‘(‘ respectively to make them readable at a glance and ready for analysis. 
+
+
 For the current salary column which contained both letters and digits, I first duplicated the column then split it using the ‘digit to non-digit’ option, which split the column into 3 separate columns. Thereafter, I removed the column having just the letter ‘k’ and used ‘replace values’ to remove ‘k’ from the second split column leaving just the digits. Next, I changed the data type of both columns to whole number and using custom column under ‘add column’ tab, I applied DAX function to obtain the average salary from the two columns with digits.
 
 INSIGHTS
