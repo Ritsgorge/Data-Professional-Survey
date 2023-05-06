@@ -5,18 +5,15 @@ According to the definitions adopted by the EU, data professionals are workers w
 This is an online questionnaire designed for data professionals to provide data pertaining to their roles based on specific questions. I downloaded the dataset from the more section of AlexTheAnalyst youtube video tutorial on PowerBI. The dataset is a csv file containing 17,668 rows and 28 columns. The columns include; Unique ID	Email, Date Taken (America/New_York), Time Taken (America/New_York), Browser, City, OS,	Country, Referrer, Time Spent, Q1 - Which Title Best Fits your Current Role?, Q2 - Did you switch careers into Data?, Q3 - Current Yearly Salary (in USD), Q4 - What Industry do you work in?, Q5 - Favorite Programming Language, Q6 - How Happy are you in your Current Position with the following? (Salary), Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance), Q6 - How Happy are you in your Current Position with the following? (Coworkers), Q6 - How Happy are you in your Current Position with the following? (Management), Q6 - How Happy are you in your Current Position with the following? (Upward Mobility), Q6 - How Happy are you in your Current Position with the following? (Learning New Things), Q7 - How difficult was it for you to break into Data?, Q8 - If you were to look for a new job today, what would be the most important thing to you?, Q9 - Male/Female?, Q10 - Current Age, Q11 - Which Country do you live in?, Q12 - Highest Level of Education, Q13 – Ethnicity.
 
 # Data cleaning
-I conducted data cleaning using the power query function in PowerBI. After assessing the dataset, some issues I observed included;
--irrelevant columns
--empty values
--normalization of columns
+I conducted data cleaning using the power query function in PowerBI. After assessing the dataset, some issues I observed included irrelevant columns, empty values and normalization of columns.
 
 # Irrelevant columns & empty values
 Columns such as Browser, City, OS,	Country & Referrer contained empty values and termed irrelevant and dropped.
 ![drop columns](https://user-images.githubusercontent.com/116006674/236623801-88bfaea9-ca22-494b-ad09-9ebee4f12dcb.png)
 
 
-2.	Normalization of columns
-Using the split delimeter option in power query, I splitted the columns which included questions about favourite programming language, country and industry with delimeter set at colon(:), dash(-) and parentheses ‘(‘ respectively to make them readable at a glance and ready for analysis. 
+# Normalization of columns
+Using the split delimeter option in power query, I splitted the columns which included questions about current title, favourite programming language, current salary and industry with delimeter set at parentheses ‘(‘, colon (:) and dash (-) respectively to make them readable at a glance and ready for analysis. 
 
 Before                                                                                                               |         After
 ---------------------------------------------------------------------------------------------------------------------|-------------------------
@@ -31,13 +28,15 @@ For the current salary column which contained both letters and digits, I first d
 
 Before                                                                                                               |         After
 ---------------------------------------------------------------------------------------------------------------------|-------------------------
+![sal before](https://user-images.githubusercontent.com/116006674/236624668-a7a4fdd9-c047-4cb1-a887-09237a04d95c.png)|![sal after (2)](https://user-images.githubusercontent.com/116006674/236624677-08fa80b3-7ad4-4d1e-8ede-d2f1df74fe2e.png)
 
-INSIGHTS
+
+# Insights
 After analysis, I visualized my findings using PowerBI. It was clear that from a total of 630 responders, the Data scientist job title earned the highest average salary while database developers earned the least average salary. The favourite programming language of data professionals is python.
 In regards to happiness with salary, data professionals had an average rating of below 5. On average, data professionals voted a 5.74 rating for work/life balance
-When asked about the difficulty to break into tech, 43% of the responders voted neutral while 21% of them voted ‘easy’
+When asked about the difficulty to break into tech, 43% of the responders voted neutral while 21% of them voted ‘easy’.
 
-Conclusion
+# Conclusion
 As a highly competitive field, companies need to look into improving the salary benefits when hiring data professionals. Also the work/life of data professionals can be better through incentives like team bonding activities at work.
 
 
